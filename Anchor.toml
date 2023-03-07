@@ -2,11 +2,11 @@
 url = "https://anchor.projectserum.com"
 
 [provider]
-cluster = "localnet"
-wallet = "~/.config/solana/id.json"
+cluster = "devnet"
+wallet = "/Users/rashidali/.config/solana/test.json"
 
-[programs.localnet]
-gumdrop = "gdrpGjVffourzkdDRrQmySw4aTHr8a3xmQzzxSwFD1a"
+[programs.devnet]
+gumdrop = "DL4mzu221UJjewGb3KzFt1ifGEBATUtaAsQYGYT3NXDv"
 
 [scripts]
 test = "yarn ts-mocha -t 1000000"

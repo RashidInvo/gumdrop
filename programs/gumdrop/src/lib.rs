@@ -6,7 +6,7 @@ use solana_program::{
     instruction::{AccountMeta, Instruction},
     program::{invoke, invoke_signed},
     sysvar::{self},
-    system_instruction::self,
+    system_instruction::{self},
 };
 use spl_token_metadata::{self};
 use std::io::Write;
@@ -14,7 +14,7 @@ use vipers::{assert_owner};
 
 pub mod merkle_proof;
 
-declare_id!("gdrpGjVffourzkdDRrQmySw4aTHr8a3xmQzzxSwFD1a");
+declare_id!("DL4mzu221UJjewGb3KzFt1ifGEBATUtaAsQYGYT3NXDv");
 
 fn get_or_create_claim_count<'a>(
     distributor     : &Account<'a, MerkleDistributor>,
